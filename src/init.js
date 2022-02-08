@@ -19,9 +19,11 @@ export default function init(accounts, options = {}, version = '1') {
             let defaultOptions = {id};
 
             try {
-                window[trackerInstanceName(id)] = new Ya[trackerConstructorName(version)](
-                    Object.assign(defaultOptions, options)
-                );
+                if (window[trackerInstanceName(id)] === undefined) {
+                    window[trackerInstanceName(id)] = new Ya[trackerConstructorName(version)](
+                        Object.assign(defaultOptions, options)
+                    );
+                }
             } catch (ex) {
                 console.warn(ex);
             }
