@@ -27,7 +27,7 @@ release = npm version $(1)
 
 publish: build
 	@git push --tags origin HEAD:master
-	@npm publish
+	@npm publish --access public
 
 lib/%.js: src/%.js
 	@echo "building $@"
