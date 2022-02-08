@@ -1,6 +1,6 @@
 {
-  "name": "react-yandex-metrika",
-  "version": "2.6.0",
+  "name": "@ronas-it/react-yandex-metrika",
+  "version": "2.6.1",
   "description": "Yandex Metrika component for React",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/narkq/react-yandex-metrika"
+    "url": "https://github.com/RonasIT/react-yandex-metrika"
   },
   "keywords": [
     "react-component",
